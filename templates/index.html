@@ -1,0 +1,39 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="header">
+  <h2 class="title">RADI_HASSINI_EL YOUSFI_AOULAD</h2>
+  <h2>SÉLECTIONNER </h2>
+</div>
+<hr/>
+
+<div class="display">
+  <div class="left-pane">
+    <img src="static/flask.png" alt="preview image" class="img-preview">
+    <div id="preview-name">Groupe Work </div>
+    <div id="select" class="image-select">
+     Sélectionner
+    </div>
+  </div>
+  <div class="right-pane">
+    <div id="results" class="search-results">
+    </div>
+  </div>
+  <div id="select" class="image-select" <li><a href="{{ url_for('upload') }}">Uploader</a> </div>
+  </div>
+<!-- The Modal -->
+<div id="modal" class="modal-display">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-images-list">
+
+        </div>
+    </div>
+      
+</div>
+
+{% endblock %}
+
